@@ -25,6 +25,7 @@ def generate_summary(logs):
         mood_count[mood] = mood_count.get(mood, 0) + 1
     return mood_count
 
+#Function to generate the pdf
 def generate_pdf(log_data):
     buffer = BytesIO()
     p = canvas.Canvas(buffer, pagesize=A4)
@@ -88,6 +89,7 @@ def generate_pdf(log_data):
     buffer.seek(0)
     return buffer
 
+#Main mood tracker function
 def show_mood_tracker():
     st.title("🧠 Mood Tracker")
 
