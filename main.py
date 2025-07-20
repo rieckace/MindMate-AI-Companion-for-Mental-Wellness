@@ -1,3 +1,4 @@
+#All the necesaary imports are here 
 import streamlit as st
 from phase1_mood_tracker import show_mood_tracker
 from phase2_journal_coping import mood_journal_and_coping_tools
